@@ -17,8 +17,6 @@ import matplotlib.pyplot as plt
 
 # resizing the images to this size as per the the CNN variant requirements
 IMAGE_SIZE =[224,224]
-train_path = 'Datasets/train'
-test_path = 'Datasets/test'
 vgg = VGG16(input_shape=IMAGE_SIZE+[3],weights='imagenet',include_top=False)
 
 for layer in vgg.layers:
